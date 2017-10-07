@@ -45,8 +45,6 @@ body {
 	margin: 0 5% 0 0;
 }
 
-.hover:hover { font-weight: bolder; }
-
 /* ----------------------------------- */
 /* about me */
 /* ----------------------------------- */
@@ -63,18 +61,14 @@ body {
 	padding: 0 0 20px 0;
 }
 
-/* letter spacing */
-#letter-spacing { 
-	letter-spacing: .1em;
-	margin: 0 0 0 10px;
- }
+.pads { padding: 0 10px; }
 
 /* ----------------------------------- */
 /* background image */
 /* ----------------------------------- */
 
 body {
-    background-image: url("images/gaming-pattern.png");
+    background-image: url("../images/gaming-pattern.png");
 }
 
 /* ----------------------------------- */
@@ -166,6 +160,8 @@ body {
 /* portfolio images */
 /* ----------------------------------- */
 
+.large { height: 100vh; }
+
 /* custom ul */
 
 .portfolio-img {
@@ -210,21 +206,21 @@ body {
 /* ----------------------------------- */
 
 @media only screen and (max-width: 991px) {
-	/* portfolio img snapping into full width and no float */
-   .portfolio-img li {
-	float: none;
-    width: 100%;
-    margin: 5% 0;
-}
-	#letter-spacing {
-		margin-top: 25px;
-	}
+	
+    .about-me { text-align: center; }
+    
+    .center-col { text-align: right; }
+	
+    #media-one { padding-bottom: 15px; }
 }
 
-@media only screen and (min-width: 992, max-width: 1199px) {
-	#letter-spacing {
-		margin-left: 25px;
-	}
+@media only screen and (max-width: 1199px) {
+	#media-one { padding-right: 40%; }
+}
+
+@media only screen and (max-width: 529px) {
+    .small-p { font-size: 60%; }
+
 }
 
 
