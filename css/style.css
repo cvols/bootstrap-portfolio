@@ -8,7 +8,7 @@ h6 {
 }
 
 body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Merriweather', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
     line-height: 1.5;
 }
@@ -201,6 +201,8 @@ body {
 
 .center { text-align: center; }
 
+.small-p { font-size: 95%; }
+
 /* ----------------------------------- */
 /* media screens */
 /* ----------------------------------- */
@@ -218,11 +220,9 @@ body {
 	#media-one { padding-right: 40%; }
 }
 
-@media only screen and (max-width: 529px) {
-    .small-p { font-size: 60%; }
-
+@media only screen and (max-width: 674px) {
+    .small-p { font-size: 60% }
 }
-
 
 
 
