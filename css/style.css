@@ -160,24 +160,10 @@ body {
 /* portfolio images */
 /* ----------------------------------- */
 
-/* custom ul */
-
-.portfolio-img {
-    width: 100%;
-    padding: 0;
-}
-
-/* custom li to make pictures sit in a block and next to each other */
-
-.portfolio-img li {
-	float: left;
-    width: 49%;
-    margin: 20px 1% 1% 0;
-}
- 
 .photo {
     overflow: hidden;
     background-color: #000;
+    margin-top: 25px;
 }
 
 /* img zoom */
@@ -218,8 +204,11 @@ body {
 	#media-one { padding-right: 40%; }
 }
 
-@media only screen and (max-width: 674px) {
-    .small-p { font-size: 55% }
+@media only screen and (max-width: 490px) {
+	#name {
+        width: 200px;
+        font-size: 125%;
+    } 
 }
 
 
