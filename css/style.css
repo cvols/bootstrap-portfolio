@@ -29,13 +29,13 @@ body {
 	font-family: 'Georgia';
 	color: white;
 	background-color: #4aaaa5;
-	width: 290px;
+	width: 350px;
 	text-align: center;
 	font-weight: 400;
 	font-size: 200%;
 	height: 75px;
 	padding: 25px 0 0 0;
-	margin: 0 0 0 10%;
+    margin: 0;
 }
 
 /* navbar right */
@@ -44,6 +44,10 @@ body {
 	padding: 15px 0 0 0; 
 	margin: 0 5% 0 0;
 }
+
+/* Changes regular toggle color */
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #fff; }
 
 /* ----------------------------------- */
 /* about me */
@@ -61,6 +65,8 @@ body {
 	padding: 0 0 20px 0;
 }
 
+#media-one { margin: 0 0 0 -10px; }
+
 .pads { padding: 0 10px; }
 
 /* ----------------------------------- */
@@ -75,10 +81,13 @@ body {
 /* connect with me */
 /* ----------------------------------- */
 
-.panel-heading { text-align: center; }
-
-.panel-body { text-align: center; }
 .panel { box-shadow: 0 0 10px #888888; }
+
+/* ----------------------------------- */
+/* portfolio page */
+/* ----------------------------------- */
+
+#custom-li { margin: 110px 0 0 0; }
 
 /* images + hover effect */
 
@@ -116,7 +125,6 @@ body {
 .footer {
     width: 100%;
     height: 50px;
-    text-align: center;
     padding: 25px 0;
     background-color: #666;
     color: #fff;
@@ -127,18 +135,14 @@ body {
 /* sticky footer */
 
 html,
-body {
-    height: 100%;
-}
+body { height: 100%; }
 
 body {
     display: flex;
     flex-direction: column;
 }
 
-.content {
-    flex: 1 0 auto;
-}
+.content { flex: 1 0 auto; }
 
 /* ----------------------------------- */
 /* submit button */
@@ -147,13 +151,15 @@ body {
 .green-btn {
 	color: white;
 	background-color: #4aaaa5;
-	border: 3px solid #4aaaa5;
+	border: 2px solid #4aaaa5;
+    transition: .3s;
 }
 
 .green-btn:hover {
 	color: #4aaaa5;
+    transition: .3s; 
 	background-color: white;
-    border: 3px solid #4aaaa5;
+    border: 2px solid #4aaaa5;
 }
 
 /* ----------------------------------- */
@@ -169,7 +175,7 @@ body {
 /* img zoom */
 
 .photo img {
-    /* opacity: 0.7; */
+    opacity: 0.7; 
     width: 100%;
     height: auto;
     transform: scale(1.25);
@@ -177,13 +183,11 @@ body {
 }
 
 .img-size:hover {
-    /* opacity: 1.0; */
+    opacity: 1.0;
     transform: scale(1.13);
 }
 
 /* img text */
-
-.center { text-align: center; }
 
 .small-p { font-size: 95%; }
 
@@ -191,29 +195,26 @@ body {
 /* media screens */
 /* ----------------------------------- */
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
 	
     .about-me { text-align: center; }
-    
-    .center-col { text-align: right; }
-	
+    	
     #media-one { padding-bottom: 15px; }
+    
+    #custom-li { margin: 0; }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
 	#media-one { padding-right: 40%; }
 }
 
 @media only screen and (max-width: 490px) {
-	#name {
-        width: 200px;
-        font-size: 125%;
-    } 
+	#name { width: 300px; } 
 }
 
-
-
-
+@media only screen and (max-width: 768px) {
+    .navbar { background-color: #4aaaa5; }
+}
 
 
 
