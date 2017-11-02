@@ -55,7 +55,7 @@ body {
 
 .well { 
 	background-color: white; 
-	box-shadow: 0 0 10px #888888;
+	/* box-shadow: 0 0 10px #888888; */
 }
 
 .about-me {
@@ -73,15 +73,15 @@ body {
 /* background image */
 /* ----------------------------------- */
 
-body {
-    background-image: url("../images/gaming-pattern.png");
-}
+body { background-image: url("../images/gaming-pattern.png"); }
 
 /* ----------------------------------- */
 /* connect with me */
 /* ----------------------------------- */
 
-.panel { box-shadow: 0 0 10px #888888; }
+/* .panel { box-shadow: 0 0 10px #888888; } */
+
+.panel-default { padding: 0; }
 
 /* ----------------------------------- */
 /* portfolio page */
@@ -109,9 +109,7 @@ body {
 }
 
 .big-hover,
-.small-img-right {
-    transition-duration: .3s;
-}
+.small-img-right { transition-duration: .3s; }
 
 .big-hover:hover {
     transform: scale(1.5);
@@ -196,11 +194,8 @@ body {
 /* ----------------------------------- */
 
 @media only screen and (max-width: 992px) {
-	
     .about-me { text-align: center; }
-    	
     #media-one { padding-bottom: 15px; }
-    
     #custom-li { margin: 0; }
 }
 
